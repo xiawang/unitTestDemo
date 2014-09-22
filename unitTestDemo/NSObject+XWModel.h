@@ -10,4 +10,6 @@
 
 @interface NSObject (XWModel)
 
+-(int)convertToFahrenheit: (int)celsiusValue;
+
 @end

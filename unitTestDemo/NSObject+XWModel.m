@@ -10,4 +10,9 @@
 
 @implementation NSObject (XWModel)
 
+-(int)convertToFahrenheit: (int)celsiusValue
+{
+  return (int) (((float) celsiusValue)*9.0/5.0 + 32.0);
+}
+
 @end
