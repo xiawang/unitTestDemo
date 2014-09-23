@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "XWModel.h"
 
-@interface ViewController ()
+@interface ViewController () {
+  XWModel* model;
+}
 
 @end
 
@@ -16,12 +19,18 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+  model = [[XWModel alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)celsiusValueEntered:(id)sender
+{
+  int fahrenheit = [model convertToFahrenheit:[self.celsiusValueTextField.text integerValue]];
+  self.fahrenheitValueLabel.text = [NSString stringWithFormat:@"%d", fahrenheit];
 }
 
 @end

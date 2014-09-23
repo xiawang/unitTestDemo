@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "XWModel.h"
 
-@interface unitTestDemoTests : XCTestCase
+@interface unitTestDemoTests : XCTestCase {
+  XWModel* _model;
+}
 
 @end
 
@@ -17,7 +20,7 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+  _model = [[XWModel alloc] init];
 }
 
 - (void)tearDown {
@@ -35,6 +38,20 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+- (void)testValue
+{
+  XCTAssertTrue([_model convertToFahrenheit:0] == 32, @"Converting 0");
+  XCTAssertTrue([_model convertToFahrenheit:-40] == -40, @"Converting -40");
+}
+
+- (void)testExtrema
+{
+  int maxValue = (int)((2147483647.0 - 32.0)*5.0/9.0) + 1;
+  int minValue = (int)((-2147483647.0 - 32.0)*5.0/9.0) - 1;
+  XCTAssertThrowsSpecific([_model convertToFahrenheit:maxValue], NSException, @"Converting more than max value");
+  XCTAssertThrowsSpecific([_model convertToFahrenheit:minValue], NSException, @"Converting less than min value");
 }
 
 @end

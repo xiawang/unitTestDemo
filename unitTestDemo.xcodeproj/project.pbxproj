@@ -14,7 +14,7 @@
 		A422E37519D0DAC5004D417D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A422E37419D0DAC5004D417D /* Images.xcassets */; };
 		A422E37819D0DAC5004D417D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A422E37619D0DAC5004D417D /* LaunchScreen.xib */; };
 		A422E38419D0DAC5004D417D /* unitTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A422E38319D0DAC5004D417D /* unitTestDemoTests.m */; };
-		A422E38F19D0DB11004D417D /* NSObject+XWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A422E38E19D0DB11004D417D /* NSObject+XWModel.m */; };
+		A422E38F19D0DB11004D417D /* XWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A422E38E19D0DB11004D417D /* XWModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		A422E37D19D0DAC5004D417D /* unitTestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unitTestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A422E38219D0DAC5004D417D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A422E38319D0DAC5004D417D /* unitTestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unitTestDemoTests.m; sourceTree = "<group>"; };
-		A422E38D19D0DB11004D417D /* NSObject+XWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XWModel.h"; sourceTree = "<group>"; };
-		A422E38E19D0DB11004D417D /* NSObject+XWModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XWModel.m"; sourceTree = "<group>"; };
+		A422E38D19D0DB11004D417D /* XWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWModel.h; sourceTree = "<group>"; };
+		A422E38E19D0DB11004D417D /* XWModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +84,8 @@
 		A422E36619D0DAC5004D417D /* unitTestDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A422E38D19D0DB11004D417D /* NSObject+XWModel.h */,
-				A422E38E19D0DB11004D417D /* NSObject+XWModel.m */,
+				A422E38D19D0DB11004D417D /* XWModel.h */,
+				A422E38E19D0DB11004D417D /* XWModel.m */,
 				A422E36B19D0DAC5004D417D /* AppDelegate.h */,
 				A422E36C19D0DAC5004D417D /* AppDelegate.m */,
 				A422E36E19D0DAC5004D417D /* ViewController.h */,
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A422E38F19D0DB11004D417D /* NSObject+XWModel.m in Sources */,
+				A422E38F19D0DB11004D417D /* XWModel.m in Sources */,
 				A422E37019D0DAC5004D417D /* ViewController.m in Sources */,
 				A422E36D19D0DAC5004D417D /* AppDelegate.m in Sources */,
 				A422E36A19D0DAC5004D417D /* main.m in Sources */,

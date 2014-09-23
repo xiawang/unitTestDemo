@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (XWModel)
+@interface XWModel : NSObject
 
 -(int)convertToFahrenheit: (int)celsiusValue;
 
